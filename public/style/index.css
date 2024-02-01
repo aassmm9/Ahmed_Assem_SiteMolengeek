@@ -1,0 +1,617 @@
+/* FONTS */
+
+@font-face {
+  font-family: "";
+  src: url("../assets/fonts/");
+}
+
+/* ---------------------------------  BODY --------------------------------- */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ---------------------------------  HEADER --------------------------------- */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+header {
+  width: 100%;
+  height: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px gold;
+}
+.logoMolengeek {
+  padding-left: 50px;
+}
+.headerTop {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(201, 201, 105, 0.26);
+  gap: 100px;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  color: #82368c;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.pHeader{
+  color: #82368c;
+  text-decoration: none;
+}
+.pHeader:hover {
+    color: gold;
+    padding-bottom: 5px;
+    transition: 0s;
+    letter-spacing: 0.5px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ---------------------------------  RESPONSIVE HEADER ---------------------------------  */
+
+
+
+
+/* --------------------------------- MAIN ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 1 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.sect1 {
+  height: 90%;
+  background-image: url(./../assets/image/bannerMolengeek.jpg) ;
+  background-attachment: fixed; 
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #4511d3;
+  font-size: 3rem;
+  filter: brightness(90%);
+}
+.titleBanner {
+  color: gold;
+  font-size: 4rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 1 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 2 ---------------------------------  */
+
+.sect2 {
+  height: 130%;
+  background-color: rgba(201, 201, 105, 0.26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title1sect2 {
+  padding-top: 20px;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #82368c;
+  margin: 0;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px black;
+}
+
+.title2sect2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: gold;
+  padding-top: 30px;
+  margin: 0;
+  font-weight: 800;
+  text-shadow: 2px 2px 5px black;
+}
+
+.psect2 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.boxes {
+  gap: 80px;
+  display: flex;
+  color: azure;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+.box1{  
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  background-color: rgb(107, 106, 89);
+}
+
+.box1:hover {
+  background-color: gold;
+  transition: 1s;
+}
+
+.box2 {  
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  background-color: rgb(107, 106, 89);
+}
+
+.box2:hover {
+  background-color: gold;
+  transition: 1s;
+}
+
+.box3 {  
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  background-color: rgb(107, 106, 89);
+}
+
+.box3:hover {
+  
+  background-color: gold;
+  transition: 1s;
+}
+
+.titleimgboxsect2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.titleimgboxsect2:hover {
+  padding-left: 20px;
+  transition:ease 1s;
+}
+
+.btnimgboxsect2,
+.btnimgboxsect2::after {
+ padding: 16px 20px;
+ font-size: 1.2rem;
+ background: linear-gradient(45deg, transparent 5%, gold 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px;
+ outline: transparent;
+ position: relative;
+}
+
+.btnimgboxsect2::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "HOVER ME";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #06047e 3%, #06047e 5%, black 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #ee0505;
+ clip-path: var(--slice-0);
+}
+
+.btnimgboxsect2:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+/* --------------------------------- SECTION 2 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 3 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.sect3 {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #82368c;
+  gap: 30px;
+}
+
+.titlesect3 {
+  padding-top: 20px;
+  font-size: 3rem;
+  font-weight: 800;
+  color: azure;
+  margin: 0;
+}
+
+.event {
+  height: 150px;
+  width: 200px;
+  background-color: rgba(255, 217, 0, 0.614);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  color: black;
+  flex-direction: column;
+  text-align: center;
+  color: azure;
+  font-size: 1.3rem;
+}
+
+.event:hover {
+  background-color: gold;
+  padding-bottom: 5px;
+  transition: 0s;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 3 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 4 ---------------------------------  */
+
+.sect4 {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(201, 201, 105, 0.26);
+  color: #82368c;
+  font-size: 2rem;
+}
+
+.titleSect4 {
+  padding-top: 20px;
+  margin: 0;
+}
+
+.btnSect4 {
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #03045e;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  font-size: 1.2rem;
+  color: azure;
+  font-weight: 700;
+  border: none;
+  background-color: gold;
+ }
+ 
+.btnSect4::before,
+ .btnSect4::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+ }
+ 
+  .btnSect4::before {
+  left: -10px;
+  background: #240046;
+ }
+ 
+ .btnSect4::after {
+  right: -10px;
+  background: #5a189a;
+ }
+ 
+ .btnSect4:hover::before,
+ .btnSect4:hover::after {
+  width: 58%;
+ }
+ 
+ .btnSect4:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+ }
+ 
+ .btnSect4 span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+ }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 4 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 5 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.sect5 {
+  height: 50%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(201, 201, 105, 0.26);
+}
+
+.titleSect5 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 2.5rem;
+  color: #82368c;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+.slider {
+	background: white transparent;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 960px;
+	
+	&::before,
+	&::after {
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll 20s linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+}
+
+/* --------------------------------- SECTION 5 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 6 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.sect6 {
+  display: flex;
+  height: 70%;
+  width: 100%;
+}
+
+.leftsidesect6 {
+  height: 100%;
+  width: 60%;
+}
+
+.rightsidesect6 {
+  width: 40%;
+  height: 100%;
+  background-color: #82368c;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 6 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 7 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.sect7 {
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+.topsect7 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.psect7 {
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+
+}
+
+.inputsect7 {
+  width: 1000px;
+  height: 47px;
+  border-color: rgba(128, 128, 128, 0.263);
+}
+
+.inconEnveloppe {
+  font-size: 4rem;
+}
+
+.psect7 {
+  font-size: 2rem;
+  padding-top: 10px;
+  margin: 0;
+  color: #82368c;
+}
+
+.btnsect7 {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: black;
+  border: 3px solid #82368c;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+ }
+ 
+ .btnsect7::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #82368c;
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+ }
+ 
+ .btnsect7:hover::before {
+  transform: translateX(0);
+ }
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 7 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ---------------------------------  RESPONSIVE MAIN ---------------------------------  */
+
+
+ 
+ 
+/* ---------------------------------  FOOTER ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+footer {
+  height: 60%;
+  background-color: rgb(60, 60, 60)
+ 
+}
+
+.footerTop {
+  height: 20%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  font-size: 3rem;
+}
+
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40%;
+  padding-top: 50px;
+}
+
+.footerMolengeekLogo {
+  padding-top: 100px;
+}
+
+.pfooter {
+  color: white;
+  
+}
+
+.pfooter2 {
+  color: gray;
+}
+
+.flex:hover {
+  padding-bottom: 10px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ---------------------------------  FOOTER ---------------------------------  */
+
+/* ---------------------------------  RESPONSIVE FOOTER ---------------------------------  */
+
+
+
+/*# sourceMappingURL=app.css.map */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+

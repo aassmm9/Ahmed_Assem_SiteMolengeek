@@ -1,0 +1,456 @@
+/* FONTS */
+
+@font-face {
+    font-family: "";
+    src: url("../assets/fonts/");
+  }
+  
+/* ---------------------------------  BODY --------------------------------- */
+  
+  /* //////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  /* //////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+  /* ---------------------------------  HEADER --------------------------------- */
+  
+  /* //////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+  header {
+    width: 100%;
+    height: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px rgb(1, 5, 245);
+  }
+  .logoMolengeek {
+    padding-left: 50px;
+  }
+  .headerTop {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(141, 141, 132, 0.264);
+    gap: 100px;
+  }
+  .navBar {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .pHeader{
+    color: #6558be;
+    text-decoration: none;
+  }
+  .pHeader:hover {
+      padding-bottom: 5px;
+      transition: 0s;
+      letter-spacing: 0.5px;
+  }
+  
+  /* //////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+  /* ---------------------------------  RESPONSIVE HEADER ---------------------------------  */
+  
+  
+  
+  
+/* --------------------------------- MAIN ---------------------------------  */
+  
+  /* //////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+/* --------------------------------- SECTION 1 ---------------------------------  */
+  
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 2 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.sect1Formation {
+    height: 70%;
+    width: 100%;
+    background-image: url(./../assets/image/bannerFormation.avif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    display: flex;
+    color: #82b6e3;
+    text-shadow: 2px 2px rgb(0, 98, 255);
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    filter: brightness(90%);
+    font-size: 800;
+    letter-spacing: 2px;
+}
+.sect2Formation {
+    height: 80%;
+    width: 100%;
+    background-color: rgba(141, 141, 132, 0.264);
+}
+.sect2Center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.sect2left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sect2right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    overflow: visible;
+    width: 300px;
+    height: 500px;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 5px;
+  }
+  
+  .front, .back {
+    background-color: #82b6e3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .back::before {
+    position: absolute;
+    content: ' ';
+    display: block;
+    width: 160px;
+    height: 160%;
+    background: linear-gradient(90deg, transparent, #0b08ee, #0b08ee, #0b08ee, #0b08ee, transparent);
+    animation: rotation_481 5000ms infinite linear;
+  }
+  
+  .back-content {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    background-color: #1064ad;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .card:hover .content {
+    transform: rotateY(180deg);
+  }
+  
+  @keyframes rotation_481 {
+    0% {
+      transform: rotateZ(0deg);
+    }
+  
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .front {
+    transform: rotateY(180deg);
+    color: white;
+  }
+  
+  .front .front-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .front-content .badge {
+    background-color: #00000055;
+    padding: 2px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    width: fit-content;
+  }
+  
+  .description {
+    box-shadow: 0px 0px 10px 5px #00000088;
+    width: 100%;
+    padding: 10px;
+    background-color: #00000099;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+  }
+  
+  .title {
+    font-size: 11px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title p {
+    width: 50%;
+  }
+  
+  .card-footer {
+    color: #ffffff88;
+    margin-top: 5px;
+    font-size: 8px;
+  }
+  
+  .front .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #ffbb66;
+    position: relative;
+    filter: blur(15px);
+    animation: floating 2600ms infinite linear;
+  }
+  
+  #bottom {
+    background-color: #ff8866;
+    left: 50px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    animation-delay: -800ms;
+  }
+  
+  #right {
+    background-color: #ff2233;
+    left: 160px;
+    top: -80px;
+    width: 30px;
+    height: 30px;
+    animation-delay: -1800ms;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+  
+    50% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+.clock {
+    font-size: 3rem;
+}
+.hourglass {
+    font-size: 3rem;
+}
+.badge {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+.ulFormCourtes {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+.card-footer {
+    font-size: 0.9rem;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 2 ---------------------------------  */
+  
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 3 ---------------------------------  */
+
+.sect3Formation {
+    height: 60%;
+    width: 100%;
+    background-color: rgba(91, 91, 49, 0.219);
+
+}
+.divCentersect3 {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+  
+}
+.divleftsidesect3 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divrightsidesect3 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.titlesect3{
+    color: #82b6e3;
+    text-shadow: 2px 2px rgb(0, 98, 255);
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 9px;
+}
+/* --------------------------------- SECTION 3 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 4 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.sect4Formation {
+    width: 100%;
+    height: 60%;
+    background-color: rgba(91, 91, 49, 0.219);
+    color: #82b6e3;
+    text-shadow: 2px 2px rgb(0, 98, 255);
+}
+.titlesect4 {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.divcentersect4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 29px;
+    border: none;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 4 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 5 ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.sect5Formation {
+    height: 80%;
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------- SECTION 5 ---------------------------------  */
+
+
+
+/* ---------------------------------  FOOTER ---------------------------------  */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+footer {
+    height: 60%;
+    background-color: rgb(60, 60, 60)
+   
+  }
+  
+  .footerTop {
+    height: 20%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    font-size: 3rem;
+  }
+  
+  .footerBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40%;
+    padding-top: 50px;
+  }
+  
+  .footerMolengeekLogo {
+    padding-top: 100px;
+  }
+  
+  .pfooter {
+    color: white;
+    
+  }
+  
+  .pfooter2 {
+    color: gray;
+  }
+  
+  .flex:hover {
+    padding-bottom: 10px;
+  }
+  
+  /* //////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+  /* ---------------------------------  FOOTER ---------------------------------  */
